@@ -1,3 +1,8 @@
+Group:
+Chuhao Jia, 8794959
+Keng Li，7847075
+
+
 ## How to run newmath_java
 
 Set java environment. Open cmd and get to the same file of newmath_java (newmath_java), run 'javac Main.java' once and you will get a Main.class and Newmath.class. Then run 'java Main.java', the code will work.
