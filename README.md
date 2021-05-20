@@ -1,3 +1,6 @@
+# SEG3103
+
+| --- | --- |
 | Course | SEG 3103 |
 | Date | Summer 2021 |
 | Professor | Andrew Forward, aforward@uottawa.ca |
