@@ -17,7 +17,7 @@
 | 4 | registration request  | registration request | Pass |
 | 5 | Err1 | Err3, Err4, Err5 | Fail |
 | 6 | Err3 | Err3, Err6 | Fail |
-| 7 | Err3 | Err3,Err4, Err5 | Fail |
+| 7 | Err3 | Err3, Err4, Err5 | Fail |
 | 8 | Err1 | Err1 | Pass |
 
 
