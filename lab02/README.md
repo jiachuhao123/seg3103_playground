@@ -11,4 +11,13 @@
 ### Exercise1
 | Test Case | Expected Results | Actual Results | Verdict |
 | --- | --- | --- | --- |
-| Course | SEG 3X03 | 1 | 2 |
+| 1 | registration request  | Err4, Err5 | Fail |
+| 2 | registration request  | Err6 | Fail |
+| 3 | registration request  | Err4, Err5 | Fail |
+| 4 | registration request  | registration request | Pass |
+| 5 | Err1 | Err3, Err4, Err5 | Fail |
+| 6 | Err3 | Err3, Err6 | Fail |
+| 7 | Err3 | Err3,Err4, Err5 | Fail |
+| 8 | Err1 | Err1 | Pass |
+
+
