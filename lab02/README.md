@@ -9,7 +9,7 @@
 | Team | Chuhao jia 8794959<br>Keng Li 7847075 |
 
 ### Exercise1
-| Test Case | Expected Results | Actual Results | Verdict |
+| Test Case | Expected Results | Actual Results | Verdict(Pass, Fail, inconclusive) |
 | --- | --- | --- | --- |
 | 1 | registration request  | Err4, Err5 | Fail |
 | 2 | registration request  | Err6 | Fail |
