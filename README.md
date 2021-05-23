@@ -8,4 +8,4 @@
 | TA | James Url, jamesurl@uottawa.caa |
 | Team | Chuhao jia 8794959<br>Keng Li 7847075 |
 
-* [Lab1](lab1)
+* [Lab01](lab01)
