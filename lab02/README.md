@@ -39,13 +39,16 @@ java -jar  user-registration-app-0.1.0.jar
 ![Running Java in the console](assets/r1.png)
 
 Then copy http://localhost:8080/ to your browser and login it. You should see the page like this:
+
 ![Running Java in the console](assets/r2.png)
 
 We then use the sample test cases given in Tutorials to do the test, the sample test cases are
+
 ![Running Java in the console](assets/r3.png)
 ![Running Java in the console](assets/r4.png)
 
 The error type codes are
+
 ![Running Java in the console](assets/r5.png)
 
 
