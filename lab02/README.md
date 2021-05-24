@@ -49,7 +49,7 @@ The error type codes are
 ![Running Java in the console](assets/r5.png)
 
 
-
+The test results are shown in the follow table
 | Test Case | Expected Results | Actual Results | Verdict(Pass, Fail, inconclusive) |
 | --- | --- | --- | --- |
 | 1 | registration request  | Err4, Err5 | Fail |
