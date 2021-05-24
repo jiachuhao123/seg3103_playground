@@ -7,6 +7,7 @@
 | Professor | Andrew Forward, aforward@uottawa.ca |
 | TA | James Url, jamesurl@uottawa.caa |
 | Team | Chuhao jia 8794959<br>Keng Li 7847075 |
+| System | Windows 10 |
 
 ### Exercise1
 | Test Case | Expected Results | Actual Results | Verdict(Pass, Fail, inconclusive) |
