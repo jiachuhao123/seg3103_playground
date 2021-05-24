@@ -10,3 +10,4 @@
 | Team | Chuhao jia 8794959<br>Keng Li 7847075 |
 
 * [Lab01](lab01)
+* [Lab02](lab02)
