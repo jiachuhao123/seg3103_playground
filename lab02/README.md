@@ -68,7 +68,7 @@ The test results are shown in the follow table
 ### Exercise2
 
 To run the test (in `ecs`), run the follwing command in ecs folder
-first we delete all the files in dist, 
+first we delete all the files in dist (For the first time, you don't need do this step since dist folder haven't created)
 ```bash
 del dist\*.*
 (Y/N)? y
