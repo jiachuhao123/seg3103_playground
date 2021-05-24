@@ -36,7 +36,7 @@ To run the 'user-registration-app-0.1.0.jar' (in `registration`), run the follwi
 ```bash
 java -jar  user-registration-app-0.1.0.jar
 ```
-![Running Java in the console](assets/r1.png)
+(assets/r1.png)
 
 Then copy http://localhost:8080/ to your browser and login it. You should see the page like this:
 ![Running Java in the console](assets/r2.png)
