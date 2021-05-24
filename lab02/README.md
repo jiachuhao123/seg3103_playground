@@ -65,3 +65,25 @@ The test results are shown in the follow table
 | 8 | Err1 | Err1 | Pass |
 
 
+### Exercise2
+
+To run the test (in `ecs`), run the follwing command in ecs folder
+first we delete all the files in dist, 
+```bash
+del dist\*.*
+(Y/N)? y
+```
+
+Then we compile the test code
+```bash
+javac -encoding UTF-8 --source-path test -d dist -cp lib/junit-platform-console-standalone-1.7.1.jar test/*.java src/*.java
+```
+
+Finally, run them
+```bash
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+The result should be like the following type:
+![Running Java in the console](assets/ju1.png)
+![Running Java in the console](assets/ju2.png)
+
