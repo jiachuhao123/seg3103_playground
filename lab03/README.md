@@ -49,7 +49,7 @@ It will create a report folder, enter this folder and find index.html. You will 
 
 ![Running Java in the console](assets/date3.png)
 
-You can see we get 100% coverage for Date class
+You can see we get 100% coverage for Date class. To make it 100%, I just try all the possibility for Date class. It means, let our test to make every line of code in the program work, and let the test include all possible situations. For example, in the following pic, if the program run isEndOfMonth(). Then I need to first have two test that one for leaf year and one for not leaf year. Then I need a test for day = 31 and day for not 31 etc.
 
 ![Running Java in the console](assets/date4.png)
 
