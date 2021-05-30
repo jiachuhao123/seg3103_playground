@@ -55,7 +55,7 @@ You can see we get 100% coverage for Date class
 
 But we have a Missed Branches here.
 
-![Running Java in the console](assets/date4.png)
+![Running Java in the console](assets/date5.png)
 
 The missing one is when month = 2, day = 29 and this year is not leap year. But we cannot have this branch beacuse if we create a date with like 2001-2-29, then before we run isEndOfMonth() function in nextDate() function. It will cause an exception in setDay() function, so we will never cover this branch.
 
