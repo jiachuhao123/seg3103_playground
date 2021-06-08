@@ -81,7 +81,7 @@ String[][] sea1 = {
 ```
 The test pass. 
 
-### Commit 2 - test_New_Sea()
+### Commit 3 - test_New_Sea()
 New_Sea will allow user to creat a Custom 2D array (map), but if the length or width less than 2, it will auto change to 2 since we requir
 at least 2x2 map for our project.
 
@@ -113,7 +113,7 @@ assertEquals(true,Arrays.deepEquals(sea2,obj.New_Sea(3,3)));
 ```
 All tests pass.
 
-### Commit 3 - test_Sea_Size()
+### Commit 4 - test_Sea_Size()
 Sea_Size will return the size of the map. We will need to input Sea as it parameters instead of just input two numbers.
 We first create a 2x3 map, by the function of New_Sea, and expect it return 5, it should return 6, so the test should be failed.
 
@@ -138,7 +138,7 @@ assertEquals(20,obj.Sea_Size(sea2));
 
 All tests pass.
 
-### Commit 4 - test_Set_Block()
+### Commit 5 - test_Set_Block()
 Set_Block can change Sea[i][j] to B if Sea[i][j] is _ . Otherwise don't do any change. And then return B if change successful, or already a block when we 
 try to change B to B. If i and j bigger than the length of Sea[][], it will return invaild position.
 
@@ -157,7 +157,7 @@ assertEquals("B",obj.Set_Block(sea0, 2, 1));
 ```
 Test pass. 
 
-### Commit 5 - test_Set_Block()
+### Commit 6 - test_Set_Block()
 We want to test if it we cannot set block in a position that already been blocked, and check if the input will out of the range of sea.
 
 We continue the commit 4. Repeat set sea[2][1] to a block, and expect it return B, it should be failed.
@@ -177,7 +177,7 @@ assertEquals("invaild position",obj.Set_Block(sea, 6, 6));
 ```
 the first fail and the second pass. 
 
-### Commit 6 - test_Set_BattleShips()
+### Commit 7 - test_Set_BattleShips()
 Set_battleShips will set player (T and F) to the sea ( _ -> T,F) , T and F can only occur in one place in a single map. if we set T or F twice, then
 the first place of T and F will be reset. We cannot put player in a block.
 
@@ -209,7 +209,7 @@ assertEquals("F",obj.Set_BattleShips(sea, 0, 4,false));
 ```
 Test pass.
 
-### Commit 7 - test_Set_BattleShips()
+### Commit 8 - test_Set_BattleShips()
 We then want to test if player cannot set their ship on a block or a place that already be signed as player.
 We try to set battleship on 3,0 and 0,3. then first one is player, second one is block.
 We first want two fail tests. Both should return invaild position, so here we expect they return T and F.
@@ -225,7 +225,7 @@ assertEquals("invaild position",obj.Set_BattleShips(sea, 0, 3,true));
 ```
 Tests pass.
 
-### Commit 8 - test_Reset_BattleShips()
+### Commit 9 - test_Reset_BattleShips()
 This test is a addition part for test_Set_BattleShips, so we when put a player(T,F) twice, the first position will be reset,
 but we only test if the second position is not the same place as the first one because we test this situation in test_Set_BattleShips.
 
@@ -258,3 +258,132 @@ assertEquals("invaild position",obj.Set_BattleShips(sea, 0, 3,false));
 assertEquals("F",obj.Set_BattleShips(sea, 0, 3,false));
 ```
 The results are the same, the first two pass, third one will fail if we expect invaild position and pass if we expect F.
+
+### Commit 10 - test_Fire()
+Fire will allow user to choose a position. The position will change as follow:
+_ -> X
+B -> B
+F -> f
+T -> t
+X -> X
+If the position out of range, then return invaild position
+
+We first create a map.
+
+```bash
+String[][] sea = {
+	{"_","_","_","B","F"},
+	{"_","_","_","_","_"},
+	{"_","B","B","_","_"},
+	{"T","_","_","_","_"},
+	{"_","_","_","_","_"}};
+```
+So the map should be
+
+_ _ _ B F
+_ _ _ _ _
+_ B B _ _
+T _ _ _ _
+_ _ _ _ _
+
+We first test the range. we select 6,6, and expect it, like "X". The test should be failed.
+```bash
+assertEquals("B",obj.Fire(sea, 6, 6));
+```
+Test fail. We change the expectation to invaild position.
+```bash
+assertEquals("invaild position",obj.Fire(sea, 6, 6));
+```
+Test pass, we do the same way for the rest of the tests.
+
+For _ -> X
+Fail: 
+```bash
+assertEquals("_",obj.Fire(sea, 4, 0));
+```
+Pass:
+```bash
+assertEquals("X",obj.Fire(sea, 4, 0));
+```
+For B -> B
+Fail: 
+```bash
+assertEquals("X",obj.Fire(sea, 0, 3));
+```
+Pass:
+```bash
+assertEquals("B",obj.Fire(sea, 0, 3));
+```
+For F -> f, T -> t and X -> X
+Fail: 
+```bash
+assertEquals("F",obj.Fire(sea, 0, 4));
+assertEquals("T",obj.Fire(sea, 3, 0));
+assertEquals("_",obj.Fire(sea, 4, 0));
+```
+Pass:
+```bash
+assertEquals("f",obj.Fire(sea, 0, 4));
+assertEquals("t",obj.Fire(sea, 3, 0));
+assertEquals("X",obj.Fire(sea, 4, 0));
+```
+
+### Commit 10 - test_Winner()
+Winner will decide which player win the game. 
+Player T will win if Player F has been destroyed, so in the map, There should be a T and a f. 
+Player F will win if Player T has been destroyed, so in the map, There should be a f and a F. 
+If both player are alive, so the there is no t and f but T and F, then game is not over.
+t and f cannot occur at the same time since each player can only fire once per turn. So we don't need to test that condition.
+
+So we need create 3 maps.
+```bash
+String[][] sea = {
+	{"_","_","_","B","F"},
+	{"_","_","_","_","_"},
+	{"_","B","B","_","_"},
+	{"t","_","_","_","_"},
+	{"_","_","_","_","_"}};
+	
+String[][] sea1 = {
+	{"_","_","_","B","f"},
+	{"_","_","_","_","_"},
+	{"_","B","B","_","_"},
+	{"T","_","_","_","_"},
+	{"_","_","_","_","_"}};
+	
+String[][] sea2 = {
+	{"_","_","_","B","T"},
+	{"_","_","_","_","_"},
+	{"_","B","B","_","_"},
+	{"T","_","_","_","_"},
+	{"_","_","_","_","_"}};
+```
+We test the first one. We see there is a F and t. So player F win. So we expect T as result, and test should be failed.
+```bash
+assertEquals("T",obj.Winner(sea));
+```
+Test fail, we change T to F.
+```bash
+assertEquals("F",obj.Winner(sea));
+```
+Test pass. We repeat it to the rest two.
+
+In map 2, player T should win.
+```bash
+assertEquals("F",obj.Winner(sea1));
+```
+Fail, change F to T
+```bash
+assertEquals("T",obj.Winner(sea1));
+```
+Pass.
+
+In map 3,  the game is not over.
+```bash
+assertEquals("T",obj.Winner(sea2));
+assertEquals("F",obj.Winner(sea2));
+```
+Both fail
+```bash
+assertEquals("No winner so far",obj.Winner(sea2));
+```
