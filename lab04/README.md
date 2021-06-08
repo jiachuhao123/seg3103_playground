@@ -388,3 +388,6 @@ Both fail
 assertEquals("No winner so far",obj.Winner(sea2));
 ```
 Test pass.
+
+### Result
+![Running Java in the console](result/junit5.png)
