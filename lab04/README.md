@@ -60,24 +60,24 @@ We know how to check if Default_Sea doesn't work, now we want to check if it can
 We create a 5x5 2D array with _ as its input and this should satisfy our requirement. We expect it a false, so this should be fail.
 ```bash
 String[][] sea1 = {
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"}};
-		assertEquals(false,Arrays.deepEquals(sea1,obj.Default_Sea()));
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"}};
+assertEquals(false,Arrays.deepEquals(sea1,obj.Default_Sea()));
 ```
 Failure occurs as we thought..
 Then we change false to ture.
 
 ```bash
 String[][] sea1 = {
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"},
-				{"_","_","_","_","_"}};
-		assertEquals(true,Arrays.deepEquals(sea1,obj.Default_Sea()));
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"},
+	{"_","_","_","_","_"}};
+assertEquals(true,Arrays.deepEquals(sea1,obj.Default_Sea()));
 ```
 The test pass. 
 
@@ -387,3 +387,4 @@ Both fail
 ```bash
 assertEquals("No winner so far",obj.Winner(sea2));
 ```
+Test pass.
