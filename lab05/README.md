@@ -1,28 +1,21 @@
-## Group:
-## Chuhao Jia, 8794959
-## Keng Li，7847075
+# SEG3103
 
-## Environment
-java, Junit, elixir, exunit
+| Outline | Value |
+| --- | --- |
+| Course | SEG 3103 |
+| Date | Summer 2021 |
+| Professor | Andrew Forward, aforward@uottawa.ca |
+| TA | Henry, n.bayati@uottawa.ca |
+| Team | Chuhao jia 8794959<br>Keng Li 7847075 |
 
-## How to run newmath_java
 
-Open cmd and get to the same file of newmath_java (newmath_java)
-run 
-'javac Main.java'
-Then run 
-'java Main.java'
+## Deliverables
 
-## How to run NewmathTest.java by Junit.
+* [https://github.com/jiachuhao123/seg3103_playground/tree/main/lab05](https://github.com/jiachuhao123/seg3103_playground/tree/main/lab05)
+* Shared repo above with TA and Professors
 
-use Eclipse, create new Junit 5 file for NewmathTest.java, run the test java.
+### System
 
-## How to run newmath_ex.ex
+Windows 10
 
-Set elixir environment. Get to the root of the project (newmath_ex), 
-run 'iex lib/newmath_ex.ex'
 
-## How to run newmath_ex.ex by Exunit.
-
-Get to the root of the project (newmath_ex), 
-run 'min test'
