@@ -22,4 +22,7 @@ Windows 10
 add code in grade.ex. By checking page_live.ex. We know we have to change the module name to Grades.Calculator to link to the calculator event in the page. We just want each click generate a random grade set.
 ![Running Java in the console](assets/grade.png)
 
+After coding, we check if it works.
+![Running Java in the console](assets/grade1.png)
+Looks good.
 
