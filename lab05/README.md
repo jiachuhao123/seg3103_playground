@@ -18,7 +18,20 @@
 
 Windows 10
 
+### Before start
+run the following code in grade (root)
+```bash
+mix deps.get
+cd assets && npm install
+```
+Then we can run
+```bash
+mix phx.server
+```
+and login http://localhost:4000/ for lab05 part 1.
+
 ### Stub
+
 add code in grade.ex. By checking page_live.ex. We know we have to change the module name to Grades.Calculator to link to the calculator event in the page. We just want each click generate a random grade set.
 ![Running Java in the console](assets/grade.png)
 
