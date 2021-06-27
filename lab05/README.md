@@ -24,5 +24,6 @@ add code in grade.ex. By checking page_live.ex. We know we have to change the mo
 
 After coding, we check if it works.
 ![Running Java in the console](assets/grade1.png)
+
 Looks good.
 
