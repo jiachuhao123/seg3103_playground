@@ -49,11 +49,11 @@ java -jar bookstore5.jar
 to start the server.
 ![Running Java in the console](assets/3.png)
 
-### ""mvn test"
+### "mvn test"
 It seems like one test has something wrong, but the command work anyway.
 ![Running Java in the console](assets/4.png)
 
-### ""mvn test one more"
+### "mvn test one more"
 We add one more test to test if we can login to the right site when we enter the admin for username and the password for password.
 
 ![Running Java in the console](assets/6.png)
