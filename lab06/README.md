@@ -56,9 +56,9 @@ It seems like one test has something wrong, but the command work anyway.
 ### ""mvn test one more"
 We add one more test to test if we can login to the right site when we enter the admin for username and the password for password.
 
-![Running Java in the console](assets/5.png)
+![Running Java in the console](assets/6.png)
 BTW, we know there is something wrong with the test2, to make it looks better, we change it.
 
-![Running Java in the console](assets/6.png)
-Here is the result
 ![Running Java in the console](assets/7.png)
+Here is the result
+![Running Java in the console](assets/5.png)
