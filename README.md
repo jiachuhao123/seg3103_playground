@@ -14,3 +14,4 @@
 * [Lab03](lab03)
 * [Lab04](lab04)
 * [Lab05](lab05)
+* [Lab06](lab06)
