@@ -99,7 +99,7 @@ It says
 ![Running Java in the console](assets/bug8.2.png)
 
 Since all the condition have will lead to the same result, we just need to remove the "else".
-![Running Java in the console](assets/bug8-8.png)
+![Running Java in the console](assets/bug10-10.png)
 
 Here we delete all the if,else if and else because this bug is linked to bug 15-17.
 
